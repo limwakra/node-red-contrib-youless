@@ -9,15 +9,15 @@ module.exports = function(RED) {
         var node = this;
 
         const loginPath = '/L?w=';
-        const statusPath = '/a?f=j/';
 
         node.password = config.password;
         node.topic = config.topic;
+        node.page = config.page;
         node.ipaddress = config.ipaddress;
 
         node.on('input', function(msg) {
 
-            var statusUrl = "http://" + node.ipaddress + statusPath;
+            var statusUrl = "http://" + node.ipaddress + node.page;
             var loginUrl = "http://" + node.ipaddress + loginPath + node.password; 
             if (!node.topic.endsWith("/")) {
                 node.topic = node.topic + "/";
