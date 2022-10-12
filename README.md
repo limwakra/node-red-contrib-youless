@@ -12,7 +12,7 @@ In the node config field "page" you can enter the followed options: <br />
 
 <img width="518" alt="Schermafbeelding 2022-10-11 om 19 50 08" src="https://user-images.githubusercontent.com/97366516/195363021-750808f4-ce29-41af-a6cf-4c03b2f528cb.png">
 
-The following values are reported `/a?f=j/`<br />:
+The following values are reported `/a?f=j/`:<br />
 
 * cnt: counter in kWh
 * pwr: Pwer consumption in Watt
