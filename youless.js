@@ -56,7 +56,6 @@ module.exports = function(RED) {
                         else {
                             node.error("Request error: " + error );
                         }
-                    });
                 });
         });
     }
