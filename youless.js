@@ -34,13 +34,17 @@ module.exports = function(RED) {
                         json:true
                     }, function (error, response, body) {
                         if (!error && response.statusCode === 200) {
-                            for (var key in body){
-                                msg = {};
-                                msg.topic = key;
-                                msg.payload = body[key];
-                                node.send(msg);
-                            }
+                            if (Array.isArray(body)) {
+                            for (var i = 0; i < body.length; i++) {
+                            var obj = body[i];
+                            for (var key in obj) {
+                            var msg = {};
+                            msg.topic = key;
+                            msg.payload = obj[key];
+                            node.send(msg);
                         }
+                    }
+        }
                         else if (response) {
                             if (response.statusCode === 403) {
                                 node.error("Unauthorized request, did you set a (correct) password?");
