@@ -17,11 +17,11 @@ The following values are reported:
 * ts0: Time stamp s0 
 * cs0: s0 meter kWh
 * ps0: Power computed s0
-* p1: Dilverded kWh Low tarif
-* p2: Dilverded kWh High tarif
+* p1: Imported kWh Low tarif
+* p2: Imported kWh High tarif
 * p0: p1 + p2 total
-* n1: Concumed kWh Low tarif
-* n2: Concumed kWh High tarif
+* n1: Exported kWh Low tarif
+* n2: Exported kWh High tarif
 * n0: n1 + n2 total
 * gas: Gas meter in m3
 * gts:
