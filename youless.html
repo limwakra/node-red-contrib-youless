@@ -6,7 +6,6 @@
             name: {value:""},
             ipaddress: { value:"", validate:RED.validators.regex(/\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/) },
             topic: { value:""},
-            page: { value:""},
             password: { value:""},
         },
         inputs:1,
@@ -34,16 +33,6 @@
         <input type="text" id="node-input-topic" placeholder="Topic">
     </div>
     <div class="form-row">
-    <label for="node-input-page"><i class="icon-tag"></i> Page</label>
-    <select id="node-input-page">
-        <option value="/e?f=j/">/e?f=j/ /// this shows the upload values from the json /e page on the Youless.</option>
-        <option value="/f?f=j/">/f?f=j/ /// info info per phase /f page in json.</option>
-        <option value="/a?f=j/">/a?f=j/ /// status info report.</option>
-        <option value="/d?f=j/">/d?f=j/ /// system info: Mac Firmware version.</option>
-    </select>
-    </div>
-
-    <div class="form-row">
         <label for="node-input-password"><i class="icon-tag"></i> Password</label>
         <input type="password" id="node-input-password" placeholder="Password">
     </div>
@@ -65,7 +54,23 @@
         <li>cs0: kWh counter of S0 input</li>
         <li>ps0: Computed power</li>
         <li>raw: raw 10-bit light reflection level (without averaging)</li>
+        <li>tr: Tarrif (1 or 2)</li>
+        <li>i1: Ampère Phase 1</li>
+        <li>i2: Ampère Phase 2</li>
+        <li>i3: Ampère Phase 3</li>
+        <li>v1: Voltage Phase 1</li>
+        <li>v2: Voltage Phase 2</li>
+        <li>v3: Voltage Phase 3</li>
+        <li>l1: Watt's Phase 1</li>
+        <li>l2: Watt's Phase 2</li>
+        <li>l3: Watt's Phase 3</li>
+        <li>p1: kWh import tarif 1</li>
+        <li>p2: kWh import tarif 2</li>
+        <li>p0: kWh import tarif 1 + 2 calculated</li>
+        <li>n1: kWh export tarif 1</li>
+        <li>n2: kWh export tarif 2</li>
+        <li>n0: kWh export tarif 1 + 2 calculated</li>
+        <li>gas: Gas m3</li>
+        <li>wtr: Water m3</li>
     </ul>
 </script>
-
-
